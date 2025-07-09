@@ -1,0 +1,124 @@
+body{
+    background-color: #09090B;
+    color: #FAFAFA;
+}
+
+.container{
+    margin-top: 40px;
+}
+
+#localizacao{
+    background-color: #18181B;
+    padding: 16px;
+    text-align: left;
+    border-radius: 12px;
+    max-height: 64px; 
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    color: #F4F4F5;
+    margin-bottom: 32px;
+    font-size: 14px;
+};
+
+.form-control.inpt{
+    width: 100%;
+    padding: 1%;
+    background-color: #09090B;
+    border: 2px solid #3F3F46;
+    color: #ffffff;
+}
+
+.form-control.inpt:focus{
+    background-color: #09090B;
+    outline: none;
+    border-color: #BEF264;
+    box-shadow: none;
+    transition: border-color 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+.form-control.inpt::placeholder{
+    color: #A1A1AA;
+    font-weight: 400;
+}
+
+.form-control.inpt {
+    background-color: #09090B;
+    border: 2px solid #3F3F46;
+    color: #ffffff;
+}
+
+.input-group .input-group-text{
+    background-color: transparent;
+    background-color: #09090B;
+    border: 2px solid #3F3F46;
+}
+
+.btn{
+    width: 100%;
+    min-height: 48px;
+    padding: 1%;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background-color: #BEF264;
+    color: #09090B;
+    border: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #A3E635;
+  color: #09090B;
+}
+
+.status_msg{
+    text-align: center;
+    color:#71717A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.atividade{
+    background-color: #18181B;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.informacoes{
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+
+#item {
+    text-align: center;
+    margin-top: 40px;
+}
+#item img {
+    max-width: 200px;
+    opacity: 0.5;
+}
+
+.funcionalidades svg {
+    cursor: pointer;
+    margin-right: 8px;
+    transition: transform 0.2s ease, color 0.2s ease;
+
+    margin-bottom: 10px;
+}
+
+.funcionalidades svg:hover {
+    transform: scale(1.2);
+    color: #BEF264;
+}
+
+.datahoraAtv{
+    color: #A1A1AA;
+}
+
+.feita{
+    text-decoration: line-through;
+}

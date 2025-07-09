@@ -1,0 +1,8 @@
+CREATE DATABASE db_To_do_App;
+USE db_To_do_App;
+CREATE TABLE tb_Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(40) NOT NULL,
+    email VARCHAR(60) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);

@@ -1,0 +1,33 @@
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\appsettings.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.staticwebassets.runtime.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.staticwebassets.endpoints.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.exe
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.deps.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.runtimeconfig.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.dll
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\bin\Debug\net8.0\To-do App.pdb
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.AssemblyInfoInputs.cache
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.AssemblyInfo.cs
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.csproj.CoreCompileInputs.cache
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.RazorAssemblyInfo.cache
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.RazorAssemblyInfo.cs
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\scopedcss\bundle\To-do App.styles.css
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\scopedcss\projectbundle\To-do App.bundle.scp.css
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.dll
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\refint\To-do App.dll
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.pdb
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\To-do App.genruntimeconfig.cache
+C:\Users\josef\Projetos\To-do App\Backend\To-do App\To-do App\obj\Debug\net8.0\ref\To-do App.dll
