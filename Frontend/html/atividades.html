@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do app</title>
+</head>
+<body>
+    <!--Side-->
+    <div id="sideBar">
+        <header>
+            <img src="" alt="Icone de mapa">
+            <p>São Paulo, Brasil</p>
+        </header>
+        <form action="">
+            <div id="atvNome">
+                <label for="AtividadeNone">
+                    <img src="" alt="Icone de atividade">
+                    <input type="text" name="AtividadeNome" id="inpt_atvnome" required autocomplete="off">
+                </label>
+            </div>
+            <div id="atvData">
+                <label for="AtividadeData">
+                    <img src="" alt="Icone de calendário">
+                    <input type="date" name="AtividadeData" id="inpt_atvdata" required>
+                </label>
+            </div>
+            <div id="atvHora">
+                <label for="AtividadeHora">
+                    <img src="" alt="Icone de relógio">
+                    <input type="time" name="AtividadeData" id="inpt_atvhora" required>
+                </label>
+            </div>
+            <button type="submit" id="btn_salvar"><span>Salvar atividade</span></button>
+        </form>
+    </div>
+    <!--Atividades-->
+    <!--Como ainda não foi cadastrado nenhuma atividade vai ser apresentado desta forma para o usuário-->
+    <div id="atividades">
+        <h1>Atividades</h1>
+        <div id="list">
+            <!--Caso onde ainda não tenha nenhuma atividade-->
+            <div id="item">
+                <img src="" alt="Imagem ilustrativa do erro 404">
+                <p>Nenhuma Atividade Cadastrada</p>
+            </div>
+            <!--Caso encontre uma atividade-->
+            <div class="atividade">
+                <div class="description">
+                    <div class="informacoes">
+                        <!--O ícone deve ser trocado quando forclicado-->
+                        <img src="" alt="Icone de checkbox">
+                        <p class="nomeAtv"></p>
+                        <p class="datahoraAtv"></p>
+                    </div>
+                    <div class="funcionalidades">
+                        <div class="editar">
+                            <!--Adicionar o icone de lápis do bootstrap-->
+                            <img src="" alt="icone de lapis">
+                        </div>
+                        <div class="excluir">
+                            <!--Adicionar o icone de lixeira do bootstrap-->
+                            <img src="" alt="icone de lixeira">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
