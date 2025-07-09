@@ -1,71 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do app</title>
-</head>
-<body>
-    <!--Side-->
-    <div id="sideBar">
-        <header>
-            <img src="" alt="Icone de mapa">
-            <p>São Paulo, Brasil</p>
-        </header>
-        <form action="">
-            <div id="atvNome">
-                <label for="AtividadeNone">
-                    <img src="" alt="Icone de atividade">
-                    <input type="text" name="AtividadeNome" id="inpt_atvnome" required autocomplete="off">
-                </label>
-            </div>
-            <div id="atvData">
-                <label for="AtividadeData">
-                    <img src="" alt="Icone de calendário">
-                    <input type="date" name="AtividadeData" id="inpt_atvdata" required>
-                </label>
-            </div>
-            <div id="atvHora">
-                <label for="AtividadeHora">
-                    <img src="" alt="Icone de relógio">
-                    <input type="time" name="AtividadeData" id="inpt_atvhora" required>
-                </label>
-            </div>
-            <button type="submit" id="btn_salvar"><span>Salvar atividade</span></button>
-        </form>
-    </div>
-    <!--Atividades-->
-    <!--Como ainda não foi cadastrado nenhuma atividade vai ser apresentado desta forma para o usuário-->
-    <div id="atividades">
-        <h1>Atividades</h1>
-        <div id="list">
-            <!--Caso onde ainda não tenha nenhuma atividade-->
-            <div id="item">
-                <img src="" alt="Imagem ilustrativa do erro 404">
-                <p>Nenhuma Atividade Cadastrada</p>
-            </div>
-            <!--Caso encontre uma atividade-->
-            <div class="atividade">
-                <div class="description">
-                    <div class="informacoes">
-                        <!--O ícone deve ser trocado quando forclicado-->
-                        <img src="" alt="Icone de checkbox">
-                        <p class="nomeAtv"></p>
-                        <p class="datahoraAtv"></p>
-                    </div>
-                    <div class="funcionalidades">
-                        <div class="editar">
-                            <!--Adicionar o icone de lápis do bootstrap-->
-                            <img src="" alt="icone de lapis">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-do app</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/atividades.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-12">
+                    <!--side bar-->
+                    <div id="sideBar" class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-12">
+                                <header id="localizacao">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A1A1AA" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                    </svg>
+                                    <p>São Paulo, Brasil</p>
+                                </header>
+                                <form action="">
+                                    <div id="atvNome" class="input-group mb-3">
+                                        <span class="input-group-text">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-tag" viewBox="0 0 16 16" background="transparent">
+                                                <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0"/>
+                                                <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z"/>
+                                            </svg>
+                                        </span>
+                                        <input type="text" name="AtividadeNome" class="form-control inpt" id="inpt_atvnome" required autocomplete="off">
+                                    </div>
+                                    <div id="atvData" class="input-group mb-3">
+                                        <span class="input-group-text">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-calendar4" viewBox="0 0 16 16">
+                                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                                            </svg>
+                                        </span>
+                                        <input type="date" name="AtividadeData" class="form-control inpt" id="inpt_atvdata" required>
+                                    </div>
+                                    <div id="atvHora" class="input-group mb-3">
+                                        <span class="input-group-text">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-clock" viewBox="0 0 16 16">
+                                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                            </svg>
+                                        </span>
+                                        <input type="time" name="AtividadeData" class="form-control inpt" id="inpt_atvhora" required>
+                                    </div>
+                                    <button type="submit" id="btn_salvar" class="btn btn-primary"><span>Salvar atividade</span></button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="excluir">
-                            <!--Adicionar o icone de lixeira do bootstrap-->
-                            <img src="" alt="icone de lixeira">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12"> 
+                    <!--atividades-->
+                    <div id="atividades" class="container">
+                        <h1>Atividades</h1>
+                        <p style="margin: 0px, 24px;">Atividades 3/4</p>
+                        <div id="list" class="row">
+                            <!--Caso onde ainda não tenha nenhuma atividade-->
+                            <div id="item" style="display: none;">
+                                <img src="../imgs/404 notfound (1).png" alt="Imagem ilustrativa do erro 404">
+                                <p class="status_msg">Nenhuma atividade cadastrada</p>
+                            </div>
+                            <!--Caso encontre uma atividade-->
+                            <div class="atividade col-12">
+                                <div class="row align-itens-center">
+                                    <div class="col-md-8">
+                                        <p class="nomeAtv mb-1 feita">Exemplo</p>
+                                        <p class="datahoraAtv small feita">
+                                            <!--isso pode ser uma consulta dps-->
+                                            <!--Nesse consulta tem que usar a data do calendário e hora que foi cadastrada, isso vai ser bem importante pra fazer as coisas-->
+                                            sábado, dia 18 às 08h00
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 text-end funcionalidades">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16" style="display: none;">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                        </svg> <!--Atividade para ser feita-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#BEF264" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg> <!--Atividade feita-->
+                                        <div class="editar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                                            </svg>
+                                        </div>
+                                        <div class="excluir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="atividade col-12">
+                                <div class="row align-itens-center">
+                                    <div class="col-md-8">
+                                        <p class="nomeAtv mb-1">Exemplo 2</p>
+                                        <p class="datahoraAtv small">
+                                            <!--isso pode ser uma consulta dps-->
+                                            <!--Nesse consulta tem que usar a data do calendário e hora que foi cadastrada, isso vai ser bem importante pra fazer as coisas-->
+                                            sábado, dia 18 às 08h00
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 text-end funcionalidades">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                        </svg> <!--Atividade para ser feita-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16" style="display: none;">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                        </svg> <!--Atividade feita-->
+                                        <div class="editar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                                            </svg>
+                                        </div>
+                                        <div class="excluir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+        <!--Atividades-->
+        <!--Como ainda não foi cadastrado nenhuma atividade vai ser apresentado desta forma para o usuário-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+    </html>
