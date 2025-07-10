@@ -12,18 +12,20 @@
       <div class="row justify-content-center">
         <div class="col-md-6 col-12">
           <!--Bem os campos que vamos precisar add são: Email, nickname e senha para o cadastro-->
-          <form>
+          <form id="formLogin">
             <div class="mb-3">
               <label for="Email" class="form-label format">Email <span class="imp">*</span></label>
               <input type="email" class="form-control inpt" id="email" placeholder="Seu melhor email" aria-describedby="emailHelp" autocomplete="off" required>
+              <span class="span_required"><span class="error">Email invalido</span>, veja se escreveu corretamente</span>
             </div>
             <div class="mb-3">
               <label for="senha" class="form-label format">Senha <span class="imp">*</span></label>
               <input type="password" class="form-control inpt" id="senha" autocomplete="off" required>
+              <span class="span_required">Senha <span class="error">incorreta</span></span>
             </div>
             <button type="submit" class="btn btn-primary" id="entrar_btn">Entrar</button>
           </form>
-          <p>Não tem uma conta? <a href="./html/login.html">Cadastro</a></p>
+          <p>Não tem uma conta? <a href="../index.html">Cadastro</a></p>
         </div>
         <div id="loading" style="display: none;">
           <p>Organizando sua área de trabalho</p>
@@ -31,5 +33,6 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <script src="../scripts/validacao.js"></script>
+  </body>
 </html>

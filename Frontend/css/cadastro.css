@@ -84,3 +84,31 @@ a:hover{
 .imp{
     color: #1A2E05;
 }
+
+.span_required{
+    display: none;
+}
+
+.error{
+    color: #BEF264;
+}
+
+.btn{
+    width: 100%;
+    min-height: 48px;
+    padding: 1%;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background-color: #BEF264;
+    color: #09090B;
+    border: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #A3E635;
+  color: #09090B;
+}
+
