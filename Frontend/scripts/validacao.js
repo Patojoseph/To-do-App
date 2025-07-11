@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
             validarCadastro();
             if (!validarCadastro()){
                 e.preventDefault();
+            } else {
+                e.preventDefault();
+                loading();
             };
         })
     }
@@ -156,6 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
             validarLogin();
             if(!validarLogin()){
                 e.preventDefault();
+            } else {
+                e.preventDefault();
+                loading();
             }
         })
     }

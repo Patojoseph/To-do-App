@@ -17,3 +17,4 @@ Banco de dados da tela de cadastro deve ser feitam, com o apelido, email e senha
 ---
 
 Agora precisa ser feito a parte do medido de segurança, pois aparece a mensagem dele normalmente contudo não tem ele funcionando totalmente como deveria ser.
+Dentro das atividades precisa ser feito a configuração das frases de erro quando o cadastro der algum erro na validação inicial do frontend. Além disso precisa ser fiscutido o que precisa ser valido e se vai precisar de alguma api de tempo como date.js para fazer alguma validação no frontend.
