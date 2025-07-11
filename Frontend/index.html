@@ -12,7 +12,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6 col-12">
           <!--Bem os campos que vamos precisar add são: Email, nickname e senha para o cadastro-->
-          <form id="formCadastro" style="display: none;">
+          <form id="formCadastro">
             <div class="mb-3">
               <label for="Apelido" class="form-label format">Apelido</label>
               <input type="text" class="form-control inpt" id="Apelido" placeholder="Patojoseph_01" aria-label="Username" aria-describedby="basic-addon1" autocomplete="off" required >
@@ -46,7 +46,7 @@
           <div class="loader"></div>
           <p class="msgLoaderCadastro msg">Estamos preparando tudo para você, um momento .....</p>
         </div>
-        <div id="cadastro_confirmacao" class="container">
+        <div id="cadastro_confirmacao" class="container" style="display: none;">
           <div class="row justify-content-center">
             <div class="col-md-6 col-12">
               <h1 class="msgConfirm">Cadastro feito com <span class="error">sucesso !!!</span></h1>
