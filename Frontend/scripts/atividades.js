@@ -12,7 +12,6 @@ function check (){
             check.style.display = 'none';
             checked.style.display = 'inline-block';
             nome.style = 'text-decoration: line-through;';
-            data.style = 'text-decoration: line-through;';
 
         })
 
@@ -20,7 +19,6 @@ function check (){
             check.style.display = 'inline-block';
             checked.style.display ='none';
             nome.style = 'text-decoration: none;';
-            data.style = 'text-decoration: none;';
         })
    })
 }
